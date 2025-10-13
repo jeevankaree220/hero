@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Josefin_Sans, EB_Garamond } from "next/font/google";
 import "./globals.css";
 
-const siteName = "ClickBoost";
-const siteDescription = "Get Early Access to ClickBoost.";
+const siteName = "Desktop Apps";
+const siteDescription = "Get Early Access to Desktop Apps.";
 const siteUrl = "https://hero-one-tau.vercel.app/";
 
 const josefinSans = Josefin_Sans({
@@ -21,12 +21,12 @@ const ebGaramond = EB_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${siteName} — ClickBoost`,
+    default: `${siteName} — Desktop Apps`,
     template: `%s | ${siteName}`,
   },
   description: siteDescription,
   keywords: [
-    "ClickBoost",
+    "Desktop Apps",
     "smart assistance",
     "artificial intelligence",
     "productivity",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName,
-    title: `${siteName} — ClickBoost`,
+    title: `${siteName} — Desktop Apps`,
     description: siteDescription,
     url: siteUrl,
     images: [
@@ -53,12 +53,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteName} — ClickBoost`,
+    title: `${siteName} — Desktop Apps`,
     description: siteDescription,
     images: ["/og.png"],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon.ico",
   },
   robots: {
     index: true,

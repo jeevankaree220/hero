@@ -12,7 +12,7 @@ export default function Home() {
             <div className="size-10 rounded-xl bg-gradient-to-br from-[var(--midnight)] to-[var(--charcoal)] flex items-center justify-center shadow-md">
               <Sparkles className="w-6 h-6 text-[var(--snow)]" />
             </div>
-            <span className="font-bold text-xl text-[var(--midnight)]" style={{fontFamily: 'var(--font-josefin-sans)'}}>ClickBoost</span>
+            <span className="font-bold text-xl text-[var(--midnight)]" style={{fontFamily: 'var(--font-josefin-sans)'}}>Desktop Apps</span>
           </Link>
           
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium" style={{fontFamily: 'var(--font-eb-garamond)'}}>
@@ -45,31 +45,31 @@ export default function Home() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-[var(--snow)] border border-[var(--mist)] rounded-full px-4 py-2 mb-8 shadow-md">
               <div className="w-2 h-2 bg-[var(--softorange)] rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium text-[var(--charcoal)]" style={{fontFamily: 'var(--font-eb-garamond)'}}>
-                @SaaS @Marketing @Growth
-              </span>
+                <span className="text-sm font-medium text-[var(--charcoal)]" style={{fontFamily: 'var(--font-eb-garamond)'}}>
+                  @Desktop @Software @Development
+                </span>
             </div>
 
             {/* Main Heading */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[var(--midnight)] leading-tight mb-6" style={{fontFamily: 'var(--font-josefin-sans)'}}>
-              Turn Clicks into{' '}
+              Build Powerful{' '}
               <span className="bg-gradient-to-r from-[var(--softorange)] to-[var(--sandyellow)] bg-clip-text text-transparent">
-                Conversions
+                Desktop Apps
               </span>
             </h1>
             
             <p className="text-lg md:text-xl text-[var(--charcoal)] max-w-2xl lg:mx-0 mx-auto leading-relaxed mb-8" style={{fontFamily: 'var(--font-eb-garamond)'}}>
-              With ClickBoost, master the art of online persuasion as we harness data, creativity, and technology to transform your digital engagement strategy.
+              Transform your business with custom desktop applications. We create robust, scalable, and user-friendly software solutions that streamline operations and boost productivity.
             </p>
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-12 justify-center lg:justify-start">
               <button className="join-button flex items-center gap-2 px-8 py-4 text-lg" style={{fontFamily: 'var(--font-eb-garamond)'}}>
-                Start now
+                Get Started
               </button>
               <button className="flex items-center gap-2 px-8 py-4 text-lg font-medium text-[var(--midnight)] bg-[var(--snow)] border-2 border-[var(--mist)] rounded-full hover:border-[var(--midnight)] transition-all duration-300 shadow-md" style={{fontFamily: 'var(--font-eb-garamond)'}}>
                 <Play className="w-5 h-5" />
-                How it works
+                View Portfolio
               </button>
             </div>
 
@@ -79,11 +79,11 @@ export default function Home() {
                 Powered by
               </p>
               <div className="flex flex-wrap items-center gap-6 opacity-60">
-                <div className="text-sm font-medium text-[var(--charcoal)]">Salesforce</div>
-                <div className="text-sm font-medium text-[var(--charcoal)]">Shopify</div>
-                <div className="text-sm font-medium text-[var(--charcoal)]">Mailchimp</div>
-                <div className="text-sm font-medium text-[var(--charcoal)]">HubSpot</div>
-                <div className="text-sm font-medium text-[var(--charcoal)]">ActiveCampaign</div>
+                <div className="text-sm font-medium text-[var(--charcoal)]">QMS Total</div>
+                <div className="text-sm font-medium text-[var(--charcoal)]">LCGC</div>
+                <div className="text-sm font-medium text-[var(--charcoal)]">Calforms</div>
+                <div className="text-sm font-medium text-[var(--charcoal)]">TruGold</div>
+                <div className="text-sm font-medium text-[var(--charcoal)]">WeighWise</div>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function Home() {
               <div className="relative rounded-2xl overflow-hidden">
                 <Image
                   src="/2.jpg"
-                  alt="ClickBoost Team and Success"
+                  alt="Desktop Apps Team and Success"
                   width={400}
                   height={400}
                   className="w-full h-auto object-cover rounded-2xl"
@@ -114,28 +114,28 @@ export default function Home() {
                     <div className="w-6 h-6 bg-green-600/80 rounded-full"></div>
                   </div>
                 </div>
-                <div className="text-2xl font-bold">124K+</div>
-                <div className="text-sm opacity-90">happy customers</div>
+                <div className="text-2xl font-bold">150+</div>
+                <div className="text-sm opacity-90">apps delivered</div>
               </div>
 
               {/* Top Right - 58% */}
               <div className="absolute -top-8 -right-8 bg-[var(--midnight)] text-white rounded-2xl p-4 shadow-xl z-10">
-                <div className="text-3xl font-bold text-[var(--softorange)]">58%</div>
-                <div className="text-sm opacity-90">increased</div>
-                <div className="text-sm opacity-90">conversion rate</div>
+                <div className="text-3xl font-bold text-[var(--softorange)]">99%</div>
+                <div className="text-sm opacity-90">client</div>
+                <div className="text-sm opacity-90">satisfaction</div>
               </div>
 
               {/* Bottom Right - 14K */}
               <div className="absolute -bottom-4 -right-8 bg-[var(--midnight)] text-white rounded-2xl p-4 shadow-xl z-10">
-                <div className="text-2xl font-bold text-[var(--softorange)]">14K</div>
-                <div className="text-sm opacity-90">successful </div>
-                <div className="text-sm opacity-90">campaigns</div>
+                <div className="text-2xl font-bold text-[var(--softorange)]">24/7</div>
+                <div className="text-sm opacity-90">support &</div>
+                <div className="text-sm opacity-90">maintenance</div>
               </div>
 
               {/* Bottom Left - 5.8K */}
               <div className="absolute -bottom-8 -left-8 bg-[var(--midnight)] text-white rounded-2xl p-4 shadow-xl z-10">
-                <div className="text-2xl font-bold text-[var(--softorange)]">5.8K</div>
-                <div className="text-sm opacity-90">clients served</div>
+                <div className="text-2xl font-bold text-[var(--softorange)]">5+</div>
+                <div className="text-sm opacity-90">years experience</div>
               </div>
             </div>
           </div>
