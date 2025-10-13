@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Josefin_Sans, EB_Garamond } from "next/font/google";
+import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 
 const siteName = "Desktop Apps";
@@ -81,6 +82,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${josefinSans.variable} ${ebGaramond.variable} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );

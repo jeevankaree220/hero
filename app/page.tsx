@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Star, Menu, Smartphone, Zap, Shield, Users, ArrowRight, Play, CheckCircle, Sparkles } from "lucide-react";
+import { track } from '@vercel/analytics';
 
 export default function Home() {
   return (
@@ -16,18 +17,57 @@ export default function Home() {
           </Link>
           
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium" style={{fontFamily: 'var(--font-eb-garamond)'}}>
-            <Link href="#services" className="text-[var(--charcoal)] hover:text-[var(--midnight)] transition-colors">Service</Link>
-            <Link href="#portfolios" className="text-[var(--charcoal)] hover:text-[var(--midnight)] transition-colors">Portfolios</Link>
-            <Link href="#pricing" className="text-[var(--charcoal)] hover:text-[var(--midnight)] transition-colors">Pricing</Link>
-            <Link href="#case-study" className="text-[var(--charcoal)] hover:text-[var(--midnight)] transition-colors">Case study</Link>
-            <Link href="#about" className="text-[var(--charcoal)] hover:text-[var(--midnight)] transition-colors">About</Link>
+            <Link 
+              href="#services" 
+              className="text-[var(--charcoal)] hover:text-[var(--midnight)] transition-colors"
+              onClick={() => track('Navigation Service Click')}
+            >
+              Service
+            </Link>
+            <Link 
+              href="#portfolios" 
+              className="text-[var(--charcoal)] hover:text-[var(--midnight)] transition-colors"
+              onClick={() => track('Navigation Portfolios Click')}
+            >
+              Portfolios
+            </Link>
+            <Link 
+              href="#pricing" 
+              className="text-[var(--charcoal)] hover:text-[var(--midnight)] transition-colors"
+              onClick={() => track('Navigation Pricing Click')}
+            >
+              Pricing
+            </Link>
+            <Link 
+              href="#case-study" 
+              className="text-[var(--charcoal)] hover:text-[var(--midnight)] transition-colors"
+              onClick={() => track('Navigation Case Study Click')}
+            >
+              Case study
+            </Link>
+            <Link 
+              href="#about" 
+              className="text-[var(--charcoal)] hover:text-[var(--midnight)] transition-colors"
+              onClick={() => track('Navigation About Click')}
+            >
+              About
+            </Link>
           </nav>
           
           <div className="flex items-center gap-4">
-            <Link href="#" className="hidden md:flex text-[var(--charcoal)] hover:text-[var(--midnight)] text-sm font-medium" style={{fontFamily: 'var(--font-eb-garamond)'}}>
+            <Link 
+              href="#" 
+              className="hidden md:flex text-[var(--charcoal)] hover:text-[var(--midnight)] text-sm font-medium" 
+              style={{fontFamily: 'var(--font-eb-garamond)'}}
+              onClick={() => track('Header Sign In Click')}
+            >
               Sign In
             </Link>
-            <button className="join-button px-6 py-2 text-sm" style={{fontFamily: 'var(--font-eb-garamond)'}}>
+            <button 
+              className="join-button px-6 py-2 text-sm" 
+              style={{fontFamily: 'var(--font-eb-garamond)'}}
+              onClick={() => track('Header Contact Click')}
+            >
               Contact
             </button>
             <button className="md:hidden">
@@ -64,10 +104,18 @@ export default function Home() {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-12 justify-center lg:justify-start">
-              <button className="join-button flex items-center gap-2 px-8 py-4 text-lg" style={{fontFamily: 'var(--font-eb-garamond)'}}>
+              <button 
+                className="join-button flex items-center gap-2 px-8 py-4 text-lg" 
+                style={{fontFamily: 'var(--font-eb-garamond)'}}
+                onClick={() => track('Hero Get Started Click')}
+              >
                 Get Started
               </button>
-              <button className="flex items-center gap-2 px-8 py-4 text-lg font-medium text-[var(--midnight)] bg-[var(--snow)] border-2 border-[var(--mist)] rounded-full hover:border-[var(--midnight)] transition-all duration-300 shadow-md" style={{fontFamily: 'var(--font-eb-garamond)'}}>
+              <button 
+                className="flex items-center gap-2 px-8 py-4 text-lg font-medium text-[var(--midnight)] bg-[var(--snow)] border-2 border-[var(--mist)] rounded-full hover:border-[var(--midnight)] transition-all duration-300 shadow-md" 
+                style={{fontFamily: 'var(--font-eb-garamond)'}}
+                onClick={() => track('Hero View Portfolio Click')}
+              >
                 <Play className="w-5 h-5" />
                 View Portfolio
               </button>
