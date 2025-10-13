@@ -1,6 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { Star, Menu, Smartphone, Zap, Shield, Users, ArrowRight, Play, CheckCircle, Sparkles } from "lucide-react";
+import { Menu, Play, Sparkles } from "lucide-react";
 import { track } from '@vercel/analytics';
 
 export default function Home() {
