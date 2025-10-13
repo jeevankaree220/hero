@@ -46,15 +46,24 @@
 
 :root {
   --radius: 0.625rem;
-  /* Waitlist design colors - exact replica */
-  --bg-light-gray: #F5F5F7;
-  --text-dark: #1D1D1F;
+  /* Brand color palette */
+  --midnight: #1A2B4C;
+  --skymist: #E6EEF7;
+  --charcoal: #2D2F36;
+  --softorange: #f77103;
+  --sandyellow: #f6c27b;
+  --snow: #FCFCFC;
+  --mist: #D1D9E6;
+  
+  /* Legacy colors for compatibility */
+  --bg-light-gray: var(--skymist);
+  --text-dark: var(--charcoal);
   --text-gray: #86868B;
-  --button-dark: #1D1D1F;
-  --input-white: #FFFFFF;
-  --shadow-light: rgba(0, 0, 0, 0.1);
-  --shadow-medium: rgba(0, 0, 0, 0.15);
-  --star-gold: #FFD700;
+  --button-dark: var(--midnight);
+  --input-white: var(--snow);
+  --shadow-light: rgba(26, 43, 76, 0.1);
+  --shadow-medium: rgba(26, 43, 76, 0.15);
+  --star-gold: var(--sandyellow);
 
   --background: var(--bg-light-gray);
   --foreground: var(--text-dark);
@@ -169,20 +178,22 @@
 }
 
 .join-button {
-  background: var(--button-dark);
-  color: var(--input-white);
+  background: var(--softorange);
+  color: var(--snow);
   border: none;
   border-radius: 50px;
   padding: 16px 32px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(244, 162, 97, 0.3);
 }
 
 .join-button:hover {
-  background: #2C2C2E;
-  transform: translateY(-1px);
+  background: var(--sandyellow);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(246, 193, 119, 0.4);
 }
 
 .star-rating {
