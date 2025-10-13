@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Josefin_Sans, EB_Garamond } from "next/font/google";
 import "./globals.css";
 
-const siteName = "Walt";
-const siteDescription = "Get Early Access to Smart AI Assistance.";
-const siteUrl = "https://walt.example";
+const siteName = "ClickBoost";
+const siteDescription = "Get Early Access to ClickBoost.";
+const siteUrl = "https://hero-one-tau.vercel.app/";
 
 const josefinSans = Josefin_Sans({
   variable: "--font-josefin-sans",
@@ -21,12 +21,12 @@ const ebGaramond = EB_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${siteName} — Smart AI Assistance`,
+    default: `${siteName} — ClickBoost`,
     template: `%s | ${siteName}`,
   },
   description: siteDescription,
   keywords: [
-    "AI assistant",
+    "ClickBoost",
     "smart assistance",
     "artificial intelligence",
     "productivity",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName,
-    title: `${siteName} — Smart AI Assistance`,
+    title: `${siteName} — ClickBoost`,
     description: siteDescription,
     url: siteUrl,
     images: [
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteName} — Smart AI Assistance`,
+    title: `${siteName} — ClickBoost`,
     description: siteDescription,
     images: ["/og.png"],
   },
