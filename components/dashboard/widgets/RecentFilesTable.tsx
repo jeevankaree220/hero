@@ -11,10 +11,10 @@ import {
   File,
   ArrowUpDown,
   ChevronRight,
+  LucideIcon,
 } from "lucide-react";
-import { format } from "date-fns";
 
-const iconMap: Record<string, any> = {
+const iconMap: Record<string, LucideIcon> = {
   "file-text": FileText,
   "film": Film,
   "music": Music,

@@ -114,12 +114,12 @@ export default function Header({ onMenuClick }: HeaderProps) {
               ">
                 <AvatarImage src="/api/placeholder/32/32" alt="User" />
                 <AvatarFallback className="
-                  bg-[var(--softorange)] text-white 
+                  bg-gradient-to-r from-blue-600 to-blue-400 text-white 
                   text-xs sm:text-sm 
                   xl:text-xs 2xl:text-sm 3xl:text-base 4xl:text-lg
                   font-medium
                 ">
-                  AJ
+                  JK
                 </AvatarFallback>
               </Avatar>
               <span className="
@@ -127,7 +127,7 @@ export default function Header({ onMenuClick }: HeaderProps) {
                 text-xs sm:text-sm 
                 xl:text-xs 2xl:text-sm 3xl:text-base 4xl:text-lg
               ">
-                Angelina Joli
+                Jeevan Kumar
               </span>
               <ChevronDown className="
                 hidden lg:block 

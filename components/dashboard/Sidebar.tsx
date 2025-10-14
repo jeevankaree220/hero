@@ -49,8 +49,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
                   w-5 h-5 sm:w-6 sm:h-6 
                   xl:w-5 xl:h-5 2xl:w-6 2xl:h-6 3xl:w-7 3xl:h-7 4xl:w-8 4xl:h-8
                 ">
-                  <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M9 22V12H15V22" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M18 10H20C21.1046 10 22 10.8954 22 12C22 13.1046 21.1046 14 20 14H18M18 10C18 7.79086 16.2091 6 14 6H10C7.79086 6 6 7.79086 6 10M18 10C18 8.89543 17.1046 8 16 8H8C6.89543 8 6 8.89543 6 10M6 10H4C2.89543 10 2 10.8954 2 12C2 13.1046 2.89543 14 4 14H6M6 10V14M18 10V14M6 14H8C9.10457 14 10 14.8954 10 16V18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18V16C14 14.8954 14.8954 14 16 14H18M6 14V18C6 19.1046 6.89543 20 8 20H16C17.1046 20 18 19.1046 18 18V14" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
               <span className="
@@ -58,7 +57,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
                 xl:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl
                 font-bold text-[var(--midnight)]
               ">
-                Shop
+                Storage
               </span>
             </div>
           </div>
@@ -136,11 +135,10 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-gradient-to-br from-[#0EA5E9] to-[#3B82F6] rounded-lg flex items-center justify-center shadow-md">
                 <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-                  <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M9 22V12H15V22" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M18 10H20C21.1046 10 22 10.8954 22 12C22 13.1046 21.1046 14 20 14H18M18 10C18 7.79086 16.2091 6 14 6H10C7.79086 6 6 7.79086 6 10M18 10C18 8.89543 17.1046 8 16 8H8C6.89543 8 6 8.89543 6 10M6 10H4C2.89543 10 2 10.8954 2 12C2 13.1046 2.89543 14 4 14H6M6 10V14M18 10V14M6 14H8C9.10457 14 10 14.8954 10 16V18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18V16C14 14.8954 14.8954 14 16 14H18M6 14V18C6 19.1046 6.89543 20 8 20H16C17.1046 20 18 19.1046 18 18V14" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <span className="text-xl font-bold text-[var(--midnight)]">Shop</span>
+              <span className="text-xl font-bold text-[var(--midnight)]">Storage</span>
             </div>
             <button
               onClick={onClose}

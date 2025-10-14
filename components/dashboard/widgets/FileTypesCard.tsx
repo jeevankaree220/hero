@@ -2,9 +2,9 @@
 
 import { Card } from "@/components/ui/card";
 import { fileTypeBreakdown } from "@/lib/mockData";
-import { FileText, Film, Folder, HelpCircle } from "lucide-react";
+import { FileText, Film, Folder, HelpCircle, LucideIcon } from "lucide-react";
 
-const iconMap: Record<string, any> = {
+const iconMap: Record<string, LucideIcon> = {
   "file-text": FileText,
   "film": Film,
   "folder": Folder,
