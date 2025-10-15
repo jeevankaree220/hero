@@ -203,7 +203,7 @@ export default function SwiggyApp() {
         
         {/* Today's Featured */}
         <div className="px-4 pt-6 pb-4 bg-[#F8F8F8]">
-          <h2 className="font-bold text-[#282C3F] text-lg mb-4">Today's Featured</h2>
+          <h2 className="font-bold text-[#282C3F] text-lg mb-4">Today&apos;s Featured</h2>
           <div className="flex gap-3 overflow-x-auto pb-2">
             {/* Chinese Specials Banner */}
             <div className="min-w-[280px] rounded-2xl overflow-hidden shadow-md">
@@ -466,9 +466,9 @@ export default function SwiggyApp() {
           </div>
         </div>
         
-        {/* Moksh, what's on your mind? */}
+        {/* Moksh, what&apos;s on your mind? */}
         <div className="px-4 pt-4 pb-6">
-          <h2 className="font-bold text-[#282C3F] text-lg mb-4">Moksh, what's on your mind?</h2>
+          <h2 className="font-bold text-[#282C3F] text-lg mb-4">Moksh, what&apos;s on your mind?</h2>
           <div className="grid grid-cols-5 gap-4">
             {[
               { name: 'Pizza', img: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=100&h=100&fit=crop' },
