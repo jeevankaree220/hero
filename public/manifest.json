@@ -1,23 +1,17 @@
 {
-  "name": "Swiggy Food Delivery",
-  "short_name": "Swiggy",
-  "description": "Order food from your favorite restaurants",
-  "start_url": "/mobile-payment",
+  "name": "Hero Portfolio",
+  "short_name": "Hero",
+  "description": "Professional portfolio showcasing modern web applications",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
-  "theme_color": "#FC8019",
+  "theme_color": "#00B37A",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
       "purpose": "any maskable"
     }
   ]

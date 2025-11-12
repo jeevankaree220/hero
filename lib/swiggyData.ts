@@ -191,6 +191,77 @@ export const restaurants: Restaurant[] = [
         name: 'Pastas',
         itemCount: 2,
         items: []
+      },
+      {
+        id: 'burgers',
+        name: 'Gourmet Burgers',
+        itemCount: 6,
+        items: [
+          {
+            id: 'burger1',
+            name: 'Classic Beef Burger',
+            description: 'Juicy beef patty with lettuce, tomato, onion and special sauce',
+            price: 249,
+            image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&h=300&fit=crop',
+            rating: 4.4,
+            isVeg: false,
+            isAvailable: true,
+            sizes: [
+              { name: 'Regular', price: 249 },
+              { name: 'Large', price: 329 }
+            ]
+          },
+          {
+            id: 'burger2',
+            name: 'Veggie Deluxe Burger',
+            description: 'Plant-based patty with fresh vegetables and avocado',
+            price: 199,
+            image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=300&h=300&fit=crop',
+            rating: 4.2,
+            isVeg: true,
+            isAvailable: true
+          },
+          {
+            id: 'burger3',
+            name: 'Chicken Crispy Burger',
+            description: 'Crispy fried chicken with coleslaw and mayo',
+            price: 229,
+            image: 'https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=300&h=300&fit=crop',
+            rating: 4.5,
+            isVeg: false,
+            isAvailable: true
+          },
+          {
+            id: 'burger4',
+            name: 'BBQ Bacon Burger',
+            description: 'Beef patty with BBQ sauce, bacon and cheese',
+            price: 299,
+            image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=300&h=300&fit=crop',
+            rating: 4.6,
+            isVeg: false,
+            isAvailable: true
+          },
+          {
+            id: 'burger5',
+            name: 'Mushroom Swiss Burger',
+            description: 'Beef patty with sautéed mushrooms and Swiss cheese',
+            price: 269,
+            image: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=300&h=300&fit=crop',
+            rating: 4.3,
+            isVeg: false,
+            isAvailable: true
+          },
+          {
+            id: 'burger6',
+            name: 'Spicy Jalapeño Burger',
+            description: 'Spicy beef patty with jalapeños and pepper jack cheese',
+            price: 279,
+            image: 'https://images.unsplash.com/photo-1553979459-d2229ba7433a?w=300&h=300&fit=crop',
+            rating: 4.4,
+            isVeg: false,
+            isAvailable: true
+          }
+        ]
       }
     ]
   },
@@ -259,6 +330,53 @@ export const restaurants: Restaurant[] = [
             price: 25,
             image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=300&h=300&fit=crop',
             rating: 4.3,
+            isVeg: true,
+            isAvailable: true
+          }
+        ]
+      },
+      {
+        id: 'burgers',
+        name: 'Street Style Burgers',
+        itemCount: 4,
+        items: [
+          {
+            id: 'burger7',
+            name: 'Aloo Tikki Burger',
+            description: 'Crispy potato patty with mint chutney and onions',
+            price: 89,
+            image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&h=300&fit=crop',
+            rating: 4.1,
+            isVeg: true,
+            isAvailable: true
+          },
+          {
+            id: 'burger8',
+            name: 'Paneer Tikka Burger',
+            description: 'Grilled paneer tikka with Indian spices',
+            price: 129,
+            image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=300&h=300&fit=crop',
+            rating: 4.3,
+            isVeg: true,
+            isAvailable: true
+          },
+          {
+            id: 'burger9',
+            name: 'Chicken Keema Burger',
+            description: 'Spiced chicken keema with onions and chutneys',
+            price: 149,
+            image: 'https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=300&h=300&fit=crop',
+            rating: 4.4,
+            isVeg: false,
+            isAvailable: true
+          },
+          {
+            id: 'burger10',
+            name: 'Masala Veg Burger',
+            description: 'Mixed vegetable patty with Indian masala',
+            price: 99,
+            image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=300&h=300&fit=crop',
+            rating: 4.0,
             isVeg: true,
             isAvailable: true
           }

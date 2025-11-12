@@ -82,10 +82,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#FC8019" />
+        <meta name="theme-color" content="#00B37A" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Swiggy" />
+        <meta name="apple-mobile-web-app-title" content="Hero Portfolio" />
       </head>
       <body className={`${josefinSans.variable} ${ebGaramond.variable} antialiased`}>
         {children}

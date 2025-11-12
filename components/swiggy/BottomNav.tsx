@@ -16,7 +16,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ active, onNavigate }) => {
   ]
   
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-[#E9E9EB] flex items-center justify-around py-2 px-2">
+    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-[#E9E9EB] flex items-center justify-around py-2 px-2 z-50">
       {items.map((item) => {
         const Icon = item.icon
         const isActive = active === item.id

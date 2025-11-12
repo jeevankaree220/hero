@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { ArrowLeft, MapPin, Search, ChevronDown, Star, Plus, Minus, X, Check, Heart, Clock, Navigation, CheckCircle2, ChevronRight, User } from 'lucide-react'
-import { StatusBar } from '@/components/swiggy/StatusBar'
+// import { StatusBar } from '@/components/swiggy/StatusBar'
 import { BottomNav } from '@/components/swiggy/BottomNav'
 import { CircularTimer } from '@/components/swiggy/CircularTimer'
 import { GooglePayIcon, PaytmIcon, PhonePeIcon, VisaIcon, WalletIcon, BankIcon, CashIcon } from '@/components/swiggy/PaymentIcons'
@@ -22,7 +22,7 @@ import { formatPrice, calculateItemTotal, calculateCartTotal, calculateTax, calc
 
 type Screen = 'location' | 'home' | 'restaurants-home' | 'instamart-home' | 'search' | 'restaurant' | 'cart' | 'address' | 'payment' | 'upi-timer' | 'tracking' | 'rating' | 'account'
 
-export default function SwiggyApp() {
+export default function FoodieApp() {
   const [currentScreen, setCurrentScreen] = useState<Screen>('location')
   const [selectedLocation, setSelectedLocation] = useState<Location>(locations[0])
   const [selectedRestaurant, setSelectedRestaurant] = useState<Restaurant | null>(null)
@@ -45,8 +45,7 @@ export default function SwiggyApp() {
 
   // Location Selection Screen
   const LocationScreen = () => (
-    <div className="flex flex-col h-full bg-white">
-      <StatusBar />
+    <div className="flex flex-col min-h-[calc(100vh-44px)] bg-white">
       <div className="flex-1 overflow-y-auto">
         <div className="p-4">
           <h1 className="text-xl font-bold text-[#282C3F] mb-6">MANAGE ADDRESSES</h1>
@@ -82,11 +81,10 @@ export default function SwiggyApp() {
 
   // Home Screen - Restaurant Listing
   const HomeScreen = () => (
-    <div className="flex flex-col h-full bg-[#F8F8F8]">
-      <StatusBar />
+    <div className="flex flex-col min-h-[calc(100vh-44px)] bg-[#F8F8F8]">
       
       {/* Header */}
-      <div className="px-4 pt-3 pb-3 bg-white">
+      <div className="px-4 pt-0 pb-3 bg-white">
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2" onClick={() => setCurrentScreen('location')}>
             <MapPin className="w-5 h-5 text-[#282C3F]" fill="currentColor" />
@@ -108,7 +106,7 @@ export default function SwiggyApp() {
       </div>
       
       {/* Main Content */}
-      <div className="flex-1 overflow-y-auto pb-16">
+      <div className="flex-1 overflow-y-auto pb-20">
         {/* Category Cards */}
         <div className="px-4 pt-4 pb-4 bg-white">
           <div className="grid grid-cols-2 gap-3">
@@ -272,13 +270,6 @@ export default function SwiggyApp() {
                   </svg>
                 </div>
                 <p className="text-xs font-bold text-[#00A896]">Try New Tastes</p>
-                <div className="absolute right-2 bottom-2 w-16 h-16">
-                  <img 
-                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=100&h=100&fit=crop" 
-                    alt="Burger"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
               </div>
             </div>
             
@@ -297,13 +288,6 @@ export default function SwiggyApp() {
                   </svg>
                 </div>
                 <p className="text-xs font-bold text-[#8B4513]">A Feast For 2</p>
-                <div className="absolute right-2 bottom-2 w-16 h-16">
-                  <img 
-                    src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=100&h=100&fit=crop" 
-                    alt="Burger"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
               </div>
             </div>
             
@@ -322,13 +306,6 @@ export default function SwiggyApp() {
                   </svg>
                 </div>
                 <p className="text-xs font-bold text-[#C2185B]">Calls For A Party</p>
-                <div className="absolute right-2 bottom-2 w-16 h-16">
-                  <img 
-                    src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=100&h=100&fit=crop" 
-                    alt="Burger"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -418,8 +395,7 @@ export default function SwiggyApp() {
 
   // Restaurants Home Screen
   const RestaurantsHomeScreen = () => (
-    <div className="flex flex-col h-full bg-white">
-      <StatusBar />
+    <div className="flex flex-col min-h-[calc(100vh-44px)] bg-white">
       
       {/* Header */}
       <div className="px-4 pt-3 pb-3 bg-white border-b border-[#E9E9EB]">
@@ -443,7 +419,7 @@ export default function SwiggyApp() {
         </div>
       </div>
       
-      <div className="flex-1 overflow-y-auto pb-16">
+      <div className="flex-1 overflow-y-auto pb-20">
         {/* Delivery Banner */}
         <div className="p-4">
           <div className="bg-gradient-to-r from-[#4A5FC1] to-[#667EEA] rounded-2xl p-6 relative overflow-hidden">
@@ -622,8 +598,7 @@ export default function SwiggyApp() {
 
   // Instamart Home Screen
   const InstamartHomeScreen = () => (
-    <div className="flex flex-col h-full bg-white">
-      <StatusBar />
+    <div className="flex flex-col min-h-[calc(100vh-44px)] bg-white">
       
       {/* Header */}
       <div className="px-4 pt-3 pb-3 bg-white border-b border-[#E9E9EB]">
@@ -643,7 +618,7 @@ export default function SwiggyApp() {
         </p>
       </div>
       
-      <div className="flex-1 overflow-y-auto pb-16">
+      <div className="flex-1 overflow-y-auto pb-20">
         {/* Delivery Banner */}
         <div className="p-4 bg-white">
           <div className="bg-gradient-to-r from-[#E8D5FF] to-[#F3E5F5] rounded-2xl p-4 flex items-center justify-between">
@@ -761,8 +736,7 @@ export default function SwiggyApp() {
 
   // Search Screen
   const SearchScreen = () => (
-    <div className="flex flex-col h-full bg-white">
-      <StatusBar />
+    <div className="flex flex-col min-h-[calc(100vh-44px)] bg-white">
       
       {/* Search Header */}
       <div className="px-4 pt-3 pb-2 border-b border-[#E9E9EB]">
@@ -859,8 +833,7 @@ export default function SwiggyApp() {
     if (!selectedRestaurant) return null
     
     return (
-      <div className="flex flex-col h-full bg-white">
-        <StatusBar />
+      <div className="flex flex-col min-h-[calc(100vh-44px)] bg-white">
         
         {/* Restaurant Header */}
         <div className="relative">
@@ -934,7 +907,7 @@ export default function SwiggyApp() {
         </div>
         
         {/* Menu Items */}
-        <div className="flex-1 overflow-y-auto pb-20">
+        <div className="flex-1 overflow-y-auto pb-24">
           <div className="p-4">
             {selectedRestaurant.categories.map((category) => (
               <div key={category.id} className="mb-6">
@@ -990,7 +963,7 @@ export default function SwiggyApp() {
         {/* Cart Preview */}
         {cart.length > 0 && (
           <div 
-            className="fixed bottom-0 left-0 right-0 bg-[#48C479] px-4 py-3 flex items-center justify-between cursor-pointer"
+            className="fixed bottom-16 left-0 right-0 bg-[#48C479] px-4 py-3 flex items-center justify-between cursor-pointer z-40"
             onClick={() => setCurrentScreen('cart')}
           >
             <div className="flex items-center gap-3">
@@ -1142,7 +1115,6 @@ export default function SwiggyApp() {
     
     return (
       <div className="flex flex-col h-full bg-white">
-        <StatusBar />
         
         <div className="flex items-center gap-3 px-4 py-3 border-b border-[#E9E9EB]">
           <ArrowLeft className="w-5 h-5 cursor-pointer" onClick={() => setCurrentScreen('restaurant')} />
@@ -1310,7 +1282,7 @@ export default function SwiggyApp() {
   // Address Management Screen
   const AddressScreen = () => (
     <div className="flex flex-col h-full bg-white">
-      <StatusBar />
+      {/* <StatusBar /> */}
       
       <div className="flex items-center gap-3 px-4 py-3 border-b border-[#E9E9EB]">
         <ArrowLeft className="w-5 h-5 cursor-pointer" onClick={() => setCurrentScreen('cart')} />
@@ -1349,7 +1321,6 @@ export default function SwiggyApp() {
     
     return (
       <div className="flex flex-col h-full bg-white">
-        <StatusBar />
         
         <div className="flex items-center gap-3 px-4 py-3 border-b border-[#E9E9EB]">
           <ArrowLeft className="w-5 h-5 cursor-pointer" onClick={() => setCurrentScreen('cart')} />
@@ -1524,7 +1495,7 @@ export default function SwiggyApp() {
   const UPITimerScreen = () => {
     return (
       <div className="flex flex-col h-full bg-white">
-        <StatusBar />
+        {/* <StatusBar /> */}
         
         <div className="flex items-center gap-3 px-4 py-3 border-b border-[#E9E9EB]">
           <ArrowLeft className="w-5 h-5 cursor-pointer" onClick={() => setCurrentScreen('payment')} />
@@ -1536,7 +1507,7 @@ export default function SwiggyApp() {
         
         <div className="flex-1 flex flex-col items-center justify-center px-6">
           <CircularTimer 
-            initialSeconds={291}
+            initialSeconds={10}
             onComplete={() => {
               const newOrderId = generateOrderId()
               setOrderId(newOrderId)
@@ -1587,7 +1558,6 @@ export default function SwiggyApp() {
     
     return (
       <div className="flex flex-col h-full bg-white">
-        <StatusBar />
         
         <div className="flex-1 overflow-y-auto">
           {/* Success Animation */}
@@ -1718,7 +1688,6 @@ export default function SwiggyApp() {
   const RatingScreen = () => {
     return (
       <div className="flex flex-col h-full bg-white">
-        <StatusBar />
         
         <div className="flex items-center gap-3 px-4 py-3 border-b border-[#E9E9EB]">
           <h1 className="font-bold text-[#282C3F]">RATE YOUR DELIVERY</h1>
@@ -1779,8 +1748,7 @@ export default function SwiggyApp() {
 
   // Account Screen
   const AccountScreen = () => (
-    <div className="flex flex-col h-full bg-white">
-      <StatusBar />
+    <div className="flex flex-col min-h-[calc(100vh-44px)] bg-white">
       
       {/* Profile Header */}
       <div className="bg-gradient-to-r from-[#FC8019] to-[#FF6F00] px-4 py-6">
@@ -1923,28 +1891,37 @@ export default function SwiggyApp() {
   }
 
   return (
-    <div className="min-h-screen bg-blue-100 flex items-center justify-center p-2 sm:p-4">
-      <div className="w-full max-w-md h-screen sm:h-auto">
-        {/* iPhone Frame */}
-        <div className="bg-blue-100 rounded-none sm:rounded-[50px] p-0 sm:p-3 shadow-none sm:shadow-2xl h-full sm:h-auto">
-          <div className="bg-white rounded-none sm:rounded-[40px] overflow-hidden h-full sm:h-[90vh] max-h-[900px] relative">
-            {currentScreen === 'location' && <LocationScreen />}
-            {currentScreen === 'home' && <HomeScreen />}
-            {currentScreen === 'restaurants-home' && <RestaurantsHomeScreen />}
-            {currentScreen === 'instamart-home' && <InstamartHomeScreen />}
-            {currentScreen === 'search' && <SearchScreen />}
-            {currentScreen === 'restaurant' && <RestaurantScreen />}
-            {currentScreen === 'cart' && <CartScreen />}
-            {currentScreen === 'address' && <AddressScreen />}
-            {currentScreen === 'payment' && <PaymentScreen />}
-            {currentScreen === 'upi-timer' && <UPITimerScreen />}
-            {currentScreen === 'tracking' && <TrackingScreen />}
-            {currentScreen === 'rating' && <RatingScreen />}
-            {currentScreen === 'account' && <AccountScreen />}
-            
-            <ItemModal />
+    <div className="min-h-screen bg-white">
+      {/* Mobile PWA - Full Width */}
+      <div className="w-full min-h-screen pt-2">
+        {/* Status Bar */}
+        {/* <div className="h-11 bg-white z-20 flex items-center justify-between px-6 pt-1 border-b border-gray-200">
+          <div className="text-sm font-semibold text-black">9:41</div>
+          <div className="flex items-center gap-1">
+            <div className="w-4 h-2 bg-black rounded-sm"></div>
+            <div className="w-4 h-2 bg-black rounded-sm"></div>
+            <div className="w-6 h-3 bg-black rounded-sm"></div>
           </div>
+        </div> */}
+        
+        {/* Content Area */}
+        <div className="min-h-[calc(100vh-44px)]">
+          {currentScreen === 'location' && <LocationScreen />}
+          {currentScreen === 'home' && <HomeScreen />}
+          {currentScreen === 'restaurants-home' && <RestaurantsHomeScreen />}
+          {currentScreen === 'instamart-home' && <InstamartHomeScreen />}
+          {currentScreen === 'search' && <SearchScreen />}
+          {currentScreen === 'restaurant' && <RestaurantScreen />}
+          {currentScreen === 'cart' && <CartScreen />}
+          {currentScreen === 'address' && <AddressScreen />}
+          {currentScreen === 'payment' && <PaymentScreen />}
+          {currentScreen === 'upi-timer' && <UPITimerScreen />}
+          {currentScreen === 'tracking' && <TrackingScreen />}
+          {currentScreen === 'rating' && <RatingScreen />}
+          {currentScreen === 'account' && <AccountScreen />}
         </div>
+        
+        <ItemModal />
       </div>
     </div>
   )

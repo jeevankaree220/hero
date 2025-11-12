@@ -1,7 +1,11 @@
-// Service Worker for Swiggy PWA
-const CACHE_NAME = 'swiggy-v1'
+// Service Worker for Hero Portfolio
+const CACHE_NAME = 'hero-portfolio-v1'
 const urlsToCache = [
-  '/mobile-payment',
+  '/',
+  '/pharmify',
+  '/foodie',
+  '/ecommerce',
+  '/dashboard',
   '/manifest.json'
 ]
 
