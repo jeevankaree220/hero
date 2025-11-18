@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, Play, Sparkles, ArrowRight, ExternalLink, Smartphone, ShoppingCart, BarChart3, Utensils } from "lucide-react";
+import { Menu, Play, Sparkles, ArrowRight, ExternalLink, Smartphone, ShoppingCart, BarChart3, Utensils, ShoppingBag } from "lucide-react";
 import { track } from '@vercel/analytics';
 
 export default function Home() {
@@ -88,7 +88,7 @@ export default function Home() {
             <div className="inline-flex items-center gap-2 bg-[var(--snow)] border border-[var(--mist)] rounded-full px-4 py-2 mb-8 shadow-md">
               <div className="w-2 h-2 bg-[var(--softorange)] rounded-full animate-pulse"></div>
                 <span className="text-sm font-medium text-[var(--charcoal)]" style={{fontFamily: 'var(--font-eb-garamond)'}}>
-                  @Desktop @Software @Development
+                  @Desktop App @Mobile App @Web App
                 </span>
             </div>
 
@@ -258,15 +258,17 @@ export default function Home() {
                   <span className="px-2 py-1 bg-[var(--mist)] text-[var(--charcoal)] text-xs rounded-full">Mobile</span>
                 </div>
                 
-                <Link 
+                <a
                   href="/foodie"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-[var(--softorange)] hover:text-[var(--midnight)] font-semibold text-sm group-hover:gap-3 transition-all duration-300"
                   style={{fontFamily: 'var(--font-eb-garamond)'}}
                   onClick={() => track('Case Study Foodie Click')}
                 >
                   View Live Demo
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
               </div>
             </div>
 
@@ -310,15 +312,17 @@ export default function Home() {
                   <span className="px-2 py-1 bg-[var(--mist)] text-[var(--charcoal)] text-xs rounded-full">Auth</span>
                 </div>
                 
-                <Link 
+                <a
                   href="/ecommerce"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-[var(--softorange)] hover:text-[var(--midnight)] font-semibold text-sm group-hover:gap-3 transition-all duration-300"
                   style={{fontFamily: 'var(--font-eb-garamond)'}}
                   onClick={() => track('Case Study Ecommerce Click')}
                 >
                   View Live Demo
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
               </div>
             </div>
 
@@ -362,15 +366,17 @@ export default function Home() {
                   <span className="px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full font-medium">Healthcare</span>
                 </div>
                 
-                <Link 
+                <a
                   href="/pharmify"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-xl font-semibold text-sm group-hover:gap-3 transition-all duration-300 transform hover:scale-105"
                   style={{fontFamily: 'var(--font-eb-garamond)'}}
                   onClick={() => track('Case Study Pharmify Click')}
                 >
                   Try Onboarding
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
               </div>
             </div>
 
@@ -414,15 +420,71 @@ export default function Home() {
                   <span className="px-2 py-1 bg-[var(--mist)] text-[var(--charcoal)] text-xs rounded-full">Real-time</span>
                 </div>
                 
-                <Link 
+                <a
                   href="/dashboard"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-[var(--softorange)] hover:text-[var(--midnight)] font-semibold text-sm group-hover:gap-3 transition-all duration-300"
                   style={{fontFamily: 'var(--font-eb-garamond)'}}
                   onClick={() => track('Case Study Dashboard Click')}
                 >
                   View Live Demo
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Nike Shoes Card */}
+            <div className="group bg-[var(--snow)] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+              <div className="relative h-48 bg-gradient-to-br from-[#111111] to-[#2c2c2c] overflow-hidden">
+                <div className="absolute inset-0 bg-black/20"></div>
+                <div className="absolute top-4 left-4 flex items-center gap-2">
+                  <ShoppingBag className="w-6 h-6 text-white" />
+                  <span className="text-white font-semibold">E-commerce</span>
+                </div>
+                <div className="absolute bottom-4 right-4 bg-white/20 backdrop-blur-sm rounded-lg p-2">
+                  <Smartphone className="w-6 h-6 text-white" />
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-6xl">👟</div>
+                </div>
+              </div>
+
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="w-3 h-3 bg-[#FF6B00] rounded-full"></div>
+                  <span className="text-sm font-medium text-[var(--charcoal)]" style={{fontFamily: 'var(--font-eb-garamond)'}}>
+                    PWA • iPhone View
+                  </span>
+                </div>
+
+                <h3 className="text-xl font-bold text-[var(--midnight)] mb-3" style={{fontFamily: 'var(--font-josefin-sans)'}}>
+                  Nike Shoes Store
+                </h3>
+
+                <p className="text-[var(--charcoal)] text-sm leading-relaxed mb-4" style={{fontFamily: 'var(--font-eb-garamond)'}}>
+                  Premium Nike shoe shopping experience with iPhone frame, complete e-commerce flow, cart management,
+                  payment integration, and order tracking. Just Do It!
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-2 py-1 bg-[var(--mist)] text-[var(--charcoal)] text-xs rounded-full">React</span>
+                  <span className="px-2 py-1 bg-[var(--mist)] text-[var(--charcoal)] text-xs rounded-full">PWA</span>
+                  <span className="px-2 py-1 bg-[var(--mist)] text-[var(--charcoal)] text-xs rounded-full">iPhone</span>
+                  <span className="px-2 py-1 bg-[var(--mist)] text-[var(--charcoal)] text-xs rounded-full">Payment</span>
+                </div>
+
+                <a
+                  href="/nike-shoes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[var(--softorange)] hover:text-[var(--midnight)] font-semibold text-sm group-hover:gap-3 transition-all duration-300"
+                  style={{fontFamily: 'var(--font-eb-garamond)'}}
+                  onClick={() => track('Case Study Nike Shoes Click')}
+                >
+                  View Live Demo
+                  <ExternalLink className="w-4 h-4" />
+                </a>
               </div>
             </div>
 
